@@ -8,8 +8,8 @@ public class _Bullet : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-
-        if (collision.gameObject.layer.ToString() == "grapable")
+        print(collision.gameObject.layer);
+        if (collision.gameObject.layer == 8)
         {
             Destroy(gameObject);
         }
