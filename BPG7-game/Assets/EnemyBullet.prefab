@@ -48,7 +48,7 @@ MonoBehaviour:
   bulletSpeed: 10
   enemyLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 2048
   collitionRaduice: 0.4
 --- !u!50 &6177709343030886885
 Rigidbody2D:
