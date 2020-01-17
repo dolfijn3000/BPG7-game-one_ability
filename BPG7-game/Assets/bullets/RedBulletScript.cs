@@ -5,9 +5,9 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class RedBulletScript : Bullet
 {
-    [SerializeField] float bulletSpeed;
-    [SerializeField] LayerMask enemyLayer;
-    [SerializeField] float collitionRaduice;
+    float bulletSpeed;
+    LayerMask enemyLayer;
+    float collitionRaduice;
     private Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()

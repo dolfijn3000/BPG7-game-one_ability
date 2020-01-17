@@ -120,6 +120,52 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &283613922
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 283613924}
+  - component: {fileID: 283613923}
+  m_Layer: 0
+  m_Name: ItemSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &283613923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283613922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55503bee727b4f64ea94fa9d80e5d7be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletTypes:
+  - {fileID: -2738468555838599329, guid: 77a22e05e4a2ad342931046f7ae522ce, type: 3}
+  - {fileID: 5168777899458454432, guid: 5ea2531d5e1ed0f4684a0780aefc1a0b, type: 3}
+--- !u!4 &283613924
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283613922}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.6784797, y: -0.85333836, z: -2.5390625}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &291478208
 GameObject:
   m_ObjectHideFlags: 0
@@ -617,7 +663,7 @@ GameObject:
   - component: {fileID: 1979219545}
   - component: {fileID: 1979219548}
   - component: {fileID: 1979219549}
-  m_Layer: 11
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -638,9 +684,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1018665802244616165, guid: 73aedd9c16ca5a445923c4c7739480de,
     type: 3}
-  recoil: 4.3
+  recoil: 50
   pc: 1
-  decceloration: 0.6
+  decceloration: 5
 --- !u!212 &1979219546
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1109,6 +1155,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 4229284165530368538, guid: eeff46819a777b7489f5f9aa6e6de613,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4229284165530368540, guid: eeff46819a777b7489f5f9aa6e6de613,
         type: 3}
