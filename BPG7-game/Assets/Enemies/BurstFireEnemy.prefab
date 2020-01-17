@@ -150,8 +150,9 @@ MonoBehaviour:
   recoil: 0
   defaultCooldown: 2
   speed: 2
-  gunPoint: {fileID: 1263933447705299642}
+  gunPoint: {fileID: 0}
   shootsNumber: 3
+  gunPointBurst: {fileID: 1263933447705299642}
 --- !u!1 &2859441974882542600
 GameObject:
   m_ObjectHideFlags: 0

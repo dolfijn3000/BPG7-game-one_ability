@@ -10,7 +10,7 @@ public class Enemy : Agent
     private Vector2 destination;
     private Vector2 destinationRange = new Vector2(15, 7);
     [SerializeField] float speed;
-    [SerializeField] private Transform gunPoint;
+    [SerializeField] private Transform gunPointEnemy;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,7 +27,7 @@ public class Enemy : Agent
         if (cooldown < 0)
         {
             look(player.position + new Vector3(Random.Range(-1, 1), Random.Range(-1, 1), 0));
-            Shoot(gunPoint);
+            Shoot(gunPointEnemy);
             cooldown = defaultCooldown;
         }
         look(player.position);
