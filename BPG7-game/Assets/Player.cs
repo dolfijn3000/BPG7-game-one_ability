@@ -25,13 +25,13 @@ public class Player : Agent
         if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1))
         {
             look(mainCam.ScreenToWorldPoint(Input.mousePosition));
-            shoot();
+            Shoot();
         }
         if (Input.touchCount > 0)
         {
             look(Input.touches[0].position);
             Debug.Log(Input.touches[0].position);
-            shoot();
+            Shoot();
         }
         rb.velocity += -rb.velocity * decceloration * Time.deltaTime;
     }

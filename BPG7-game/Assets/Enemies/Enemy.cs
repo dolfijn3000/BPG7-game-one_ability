@@ -26,7 +26,7 @@ public class Enemy : Agent
         if (cooldown < 0)
         {
             look(player.position + new Vector3(Random.Range(-1, 1), Random.Range(-1, 1), 0));
-            shoot();
+            Shoot();
             cooldown = defaultCooldown;
         }
         look(player.position);
