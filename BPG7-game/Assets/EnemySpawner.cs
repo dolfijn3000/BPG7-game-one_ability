@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    [SerializeField] GameObject EnemyPrefab;
+    [SerializeField] PropabilityTable SpawnableEnemies;
     [SerializeField] Vector2[] spawnPositions;
     // Start is called before the first frame update
     void Start()
@@ -26,7 +26,7 @@ public class EnemySpawner : MonoBehaviour
     {
         Vector2 spawnPosition = spawnPositions[Random.Range(0, spawnPositions.Length)];
 
-        Instantiate(EnemyPrefab, spawnPosition, Quaternion.identity);
+        Instantiate(SpawnableEnemies.GetRandomItem(), spawnPosition, Quaternion.identity);
     }
     private void OnDrawGizmosSelected()
     {
