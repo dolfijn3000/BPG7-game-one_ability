@@ -17,9 +17,9 @@ public class Agent : MonoBehaviour
     {
         transform.rotation = Quaternion.Euler(0, 0, Vector2.SignedAngle(Vector2.up, position - (Vector2)transform.position));
     }
-    public virtual void Shoot()
+    public virtual void Shoot(Transform gunpoint)
     {
-        Instantiate(bulletPrefab, transform.position, transform.rotation);
+        Instantiate(bulletPrefab, gunpoint.position, transform.rotation);
         rb.AddForce(-transform.up * recoil * 10, ForceMode2D.Force);
     }
 }

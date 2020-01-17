@@ -6,6 +6,7 @@ public class Player : Agent
 {
     [SerializeField] bool pc;
     [SerializeField] float decceloration;
+    [SerializeField] public List<Transform> gunPoints;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,13 +26,20 @@ public class Player : Agent
         if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1))
         {
             look(mainCam.ScreenToWorldPoint(Input.mousePosition));
-            Shoot();
+            foreach (var gun in gunPoints)
+            {
+                Shoot(gun);
+            }
+
         }
         if (Input.touchCount > 0)
         {
             look(Input.touches[0].position);
             Debug.Log(Input.touches[0].position);
-            Shoot();
+            foreach (var gun in gunPoints)
+            {
+                Shoot(gun);
+            }
         }
         rb.velocity += -rb.velocity * decceloration * Time.deltaTime;
     }
