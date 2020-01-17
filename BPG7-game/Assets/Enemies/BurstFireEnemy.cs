@@ -5,7 +5,7 @@ using UnityEngine;
 public class BurstFireEnemy : Enemy
 {
     [SerializeField] int shootsNumber;
-    Transform GunPoint ;
+    public Transform gunPointBurst ;
     public override void Shoot(Transform gunpoint)
     {
         StartCoroutine(BurstFire());
@@ -14,7 +14,7 @@ public class BurstFireEnemy : Enemy
     {
         for (int i = 0; i < shootsNumber; i++)
         {
-            base.Shoot(GunPoint);
+            base.Shoot(gunPointBurst);
             yield return new WaitForSeconds(.15f);
         }
     }
