@@ -112,14 +112,16 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1018665802244616165, guid: 73aedd9c16ca5a445923c4c7739480de,
     type: 3}
   recoil: 50
-  shootSound: {fileID: 8300000, guid: ac4da9c80f1360949808eb6ca48e774f, type: 3}
-  basePitch: 1
-  PitchDiviation: 0.05
+  shootSound: {fileID: 0}
+  basePitch: 0
+  PitchDiviation: 0
   DeathSound: {fileID: 0}
   pc: 1
-  decceloration: 5
+  decceloration: 10
   gunPoints:
   - {fileID: 8069825212125885043}
+  - {fileID: 419886126537879946}
+  - {fileID: 9172341165154674026}
 --- !u!212 &5060313923777246782
 SpriteRenderer:
   m_ObjectHideFlags: 0
