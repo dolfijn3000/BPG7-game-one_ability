@@ -21,7 +21,7 @@ public class Enemy : Agent
     void Update()
     {
         if (!GameState.IsRunning) return;
-        
+
         cooldown -= Time.deltaTime;
         look(player.position);
         if (cooldown < 0)
@@ -41,7 +41,9 @@ public class Enemy : Agent
                 );
         }
     }
-    public override void Die(){
+    public override void Die()
+    {
+        base.Die();
         Destroy(this.gameObject);
     }
 }

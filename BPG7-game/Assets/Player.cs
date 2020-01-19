@@ -38,6 +38,7 @@ public class Player : Agent
     }
     public override void Die()
     {
+        base.Die();
         Destroy(this.gameObject);
         GameState.IsRunning = false;
         FindObjectOfType<GameManager>().RestartGame();

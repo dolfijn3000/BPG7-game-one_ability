@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Agent : MonoBehaviour
 {
-    [SerializeField] protected int maxHealth { get; } = 1;
+    [SerializeField] protected int maxHealth;
     protected float currentHealth { get; set; }
     [Header("shooting related")]
     [SerializeField] protected GameObject bulletPrefab;
@@ -24,6 +24,7 @@ public class Agent : MonoBehaviour
         sound = gameObject.AddComponent<AudioSource>();
         sound.clip = shootSound;
         sound.playOnAwake = false;
+        currentHealth = maxHealth;
     }
     protected void look(Vector2 position)
     {

@@ -1117,6 +1117,11 @@ PrefabInstance:
       propertyPath: shootSound
       value: 
       objectReference: {fileID: 8300000, guid: 7a7ca289b34409d41bef8f3eeba0c9b8, type: 3}
+    - target: {fileID: 5060313923777246781, guid: 469196aa08e542a4f9dc0da313d52d84,
+        type: 3}
+      propertyPath: maxHealth
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5060313923777246783, guid: 469196aa08e542a4f9dc0da313d52d84,
         type: 3}
       propertyPath: m_LocalPosition.x
