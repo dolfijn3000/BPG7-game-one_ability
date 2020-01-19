@@ -18,7 +18,7 @@ public class Checkpoint : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        ScoreManager.score += 10;
+        ScoreManager.Score += 10;
         CheckPointManager.NewCheckpointSpawnable = true;
         Destroy(this.gameObject);
     }

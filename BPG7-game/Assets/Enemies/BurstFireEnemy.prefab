@@ -145,12 +145,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f6fa5357615b774d925fcee0afa02d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 2
   bulletPrefab: {fileID: 6177709343030886889, guid: 74c9f20aa7939414cb9554a1af266a47,
     type: 3}
   recoil: 0
+  shootSound: {fileID: 0}
+  basePitch: 0
+  PitchDiviation: 0
+  DeathSound: {fileID: 0}
   defaultCooldown: 2
   speed: 2
-  gunPoint: {fileID: 0}
+  gunPointEnemy: {fileID: 0}
+  scoreBounty: 15
   shootsNumber: 3
   gunPointBurst: {fileID: 1263933447705299642}
 --- !u!1 &2859441974882542600
