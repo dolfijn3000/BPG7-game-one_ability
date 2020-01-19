@@ -5,11 +5,5 @@ using UnityEngine;
 public class DualWieldingEnemy : Enemy
 {
     public Transform[] gunPoints;
-    public override void Shoot(Transform gunpoint)
-    {
-        foreach (var gun in gunPoints)
-        {
-            Instantiate(bulletPrefab,gun.position, transform.rotation);
-        }
-    }
+    public override void Shoot(Transform gunpoint) => Shoot(gunPoints);
 }

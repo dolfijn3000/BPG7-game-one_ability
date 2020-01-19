@@ -45,10 +45,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac39a854b4bc69a46926a308f999eba2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletSpeed: 50
+  bulletSpeed: 30
   enemyLayer:
     serializedVersion: 2
-    m_Bits: 1025
+    m_Bits: 1024
   collitionRaduice: 0.7
 --- !u!50 &1018665802244616169
 Rigidbody2D:
