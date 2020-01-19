@@ -37,6 +37,18 @@ public class Agent : MonoBehaviour
         sound.pitch = basePitch + Random.Range(-PitchDiviation, PitchDiviation);
         sound.Play();
     }
+    public virtual void Shoot(List<Transform> gunpoints) => Shoot(gunpoints.ToArray());
+    public virtual void Shoot(Transform[] gunpoints)
+    {
+        foreach (var gunpoint in gunpoints)
+        {
+            Instantiate(bulletPrefab, gunpoint.position, transform.rotation);
+        }
+
+        rb.AddForce(-transform.up * recoil * 10, ForceMode2D.Force);
+        sound.pitch = basePitch + Random.Range(-PitchDiviation, PitchDiviation);
+        sound.Play();
+    }
     public virtual void TakeDamage() => TakeDamage(1);
     public virtual void TakeDamage(int damage)
     {
