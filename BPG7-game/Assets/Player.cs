@@ -43,7 +43,7 @@ public class Player : Agent
         }
         rb.velocity += -rb.velocity * decceloration * Time.deltaTime;
     }
-    private void destroy()
+    public override void Die()
     {
         Destroy(this.gameObject);
         GameState.IsRunning = false;

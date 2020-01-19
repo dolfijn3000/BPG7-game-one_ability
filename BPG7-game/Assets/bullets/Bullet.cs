@@ -22,7 +22,7 @@ public class Bullet : MonoBehaviour
         var enemy = Physics2D.OverlapCircle(transform.position, collitionRaduice, enemyLayer);
         if (enemy != null)
         {
-            enemy.SendMessage("destroy");
+            enemy.SendMessage("TakeDamage");
             this.destroy();
         }
     }

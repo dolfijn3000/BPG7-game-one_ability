@@ -330,7 +330,7 @@ PrefabInstance:
     - target: {fileID: 8662664289942361397, guid: c6d353499483ba44ca144acc8d4a62be,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8662664289942361397, guid: c6d353499483ba44ca144acc8d4a62be,
         type: 3}
@@ -1081,7 +1081,7 @@ PrefabInstance:
     - target: {fileID: 4229284165530368540, guid: eeff46819a777b7489f5f9aa6e6de613,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4229284165530368540, guid: eeff46819a777b7489f5f9aa6e6de613,
         type: 3}
@@ -1112,6 +1112,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5060313923777246781, guid: 469196aa08e542a4f9dc0da313d52d84,
+        type: 3}
+      propertyPath: shootSound
+      value: 
+      objectReference: {fileID: 8300000, guid: b72af9e90b599f540a591ef37595c2b4, type: 3}
     - target: {fileID: 5060313923777246783, guid: 469196aa08e542a4f9dc0da313d52d84,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -41,8 +41,7 @@ public class Enemy : Agent
                 );
         }
     }
-    private void destroy()
-    {
+    public override void Die(){
         Destroy(this.gameObject);
     }
 }
