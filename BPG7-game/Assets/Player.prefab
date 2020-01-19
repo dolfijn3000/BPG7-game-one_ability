@@ -162,7 +162,7 @@ MonoBehaviour:
     type: 3}
   recoil: 50
   pc: 1
-  decceloration: 5
+  decceloration: 10
   gunPoints:
   - {fileID: 8069825212125885043}
 --- !u!50 &5060313923777246776

@@ -24,7 +24,7 @@ public class ItemSpawner : MonoBehaviour
             {
                 active = true;
                 renderer.color = Color.red;
-                yield return new WaitForSeconds(10f/*Random.Range(0,10)*/);
+                yield return new WaitForSeconds(Random.Range(0,10));
             }
             yield return null;
         }
