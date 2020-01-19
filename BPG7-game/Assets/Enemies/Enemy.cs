@@ -11,6 +11,7 @@ public class Enemy : Agent
     private Vector2 destinationRange = new Vector2(15, 7);
     [SerializeField] float speed;
     [SerializeField] private Transform gunPointEnemy;
+    [SerializeField] private int scoreBounty;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +22,7 @@ public class Enemy : Agent
     void Update()
     {
         if (!GameState.IsRunning) return;
-        
+
         cooldown -= Time.deltaTime;
         look(player.position);
         if (cooldown < 0)
@@ -41,7 +42,10 @@ public class Enemy : Agent
                 );
         }
     }
-    public override void Die(){
+    public override void Die()
+    {
+        base.Die();
+        ScoreManager.Score += scoreBounty;
         Destroy(this.gameObject);
     }
 }
