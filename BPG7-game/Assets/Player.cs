@@ -30,6 +30,7 @@ public class Player : Agent
         }
         if (Input.GetMouseButtonDown(0) )
         {
+            recoil = 50;
             look(mainCam.ScreenToWorldPoint(Input.mousePosition));
             ShootOne(gunPoints);
         }
@@ -57,6 +58,7 @@ public class Player : Agent
             if (timeSinceLastBullet > 0.5)
             {
                 startTimeLastBullet = Time.time;
+                recoil = 150;
                 look(mainCam.ScreenToWorldPoint(Input.mousePosition));
                 Shoot(gunPoints);
                 lastBulletBlock = true;

@@ -14,6 +14,7 @@ public class EnemySpawner : MonoBehaviour
 
     private IEnumerator SpawnLoop()
     {
+        yield return new WaitForSeconds(5);
         while (true)
         {
             if (GameState.IsRunning) spawnEnemy();
